@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Team</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="team.css" rel="stylesheet">
+        <script src="team.js"></script>
+    </head>
+    <body>
+    
+        <section id="container">   
+
+            <section id = "head">
+            <div id="dashboardHeader">TEAM MEMBERS<input id="logout" type="button" onclick="backToLogin()" value="Logout"><img src="images/admin.jpg" id = "avatar" alt="Avatar">
+            </div>
+            </section>
+    
+            <section id = "navigation">
+              <span class="verticalMenu">
+                <img id="logo" src="images/logo.png">
+  
+                  <div id="navlinks">
+                  <span id="homeList"> <img id="homepic" src="images/homeog.png"><a id="homelink" href="dashboard.html">Home</a></span>
+                  
+                    <span id="ticketList"><img id="ticketspic" src="images/tickets.png"><a id="ticketslink" href="tickets.html">Tickets</a></span>
+                
+                      <span id="ProjectList"><img id="projectspic" src="images/projects.png"><a id="projectslink"  href="projects.html">Projects</a></span>
+      
+                        <span id="TeamList"><img id="teampic" src="images/team.png"><a id="teamlink"  href="team.html">Team Members</a></span>
+                 </span>
+                </div>
+              </section>
+    
+            <section id = "main">
+            <span id="teamHeading">All TEAM MEMBERS<input id="newTeam" type="button" onclick="" value="Add new team member"></span>
+            <hr>
+             <span id="teamSubHeadings">  <div id="teamUserName">TEAM MEMBER USERNAME</div> <div id="teamHeading"> NAME </div> <div id="teamEmail">EMAIL</div><div id="teamID">ID</div></span>   
+             <hr>
+             <span id="teamContainer"> </span>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="addNewTeam"> ADD NEW TEAM MEMBER
+              <form id ="newTeamForm">
+<p id="teamNameAndSurnameHeader"> Name and surname: </p>
+<input id="nameAndSurname" type="text" maxlength="50">
+<p id="emailHeader">Email address:</p>
+<input id="email" type="email">
+<p id="usernameHeader"> Username: </p>
+<input id="username" type="text" maxlength="15">
+<p id="usernameErrorMessage"> </p>
+
+<input id="submitTeamCancel" type="button" value="CANCEL">
+<input id="submitTam" onclick = "newTeamUserInput() "type="button" value="ADD TEAM MEMBER">
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <span id="navButtons">
+          <input id="backButton" type="button" onclick="pageNavBack()" value="⇦"> 
+          <p id= "pageNumber"></p>
+          <input id="nextButton" type="button" onclick="pageNavNext()" value="➪"> </span>
+      </section>
+            </section>
+    
+        </section>
+
+    </body>
+</html>

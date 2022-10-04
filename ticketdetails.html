@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ticket Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="ticketdetails.css" rel="stylesheet">
+        <script src="ticketdetails.js"></script>
+    </head>
+    <body>
+    
+        <section id="container">   
+
+            <section id = "head">
+            <div id="dashboardHeader">TICKETS <input id="logout" type="button" onclick="backToLogin()" value="Logout"><img src="images/admin.jpg" id = "avatar" alt="Avatar">
+            </div>
+            </section>
+    
+            <section id = "navigation">
+              <span class="verticalMenu">
+                <img id="logo" src="images/logo.png">
+  
+                  <div id="navlinks">
+                  <span id="homeList"> <img id="homepic" src="images/homeog.png"><a id="homelink" href="dashboard.html">Home</a></span>
+                  
+                    <span id="ticketList"><img id="ticketspic" src="images/tickets.png"><a id="ticketslink" href="tickets.html">Tickets</a></span>
+                
+                      <span id="ProjectList"><img id="projectspic" src="images/projects.png"><a id="projectslink"  href="projects.html">Projects</a></span>
+      
+                        <span id="TeamList"><img id="teampic" src="images/team.png"><a id="teamlink"  href="team.html">Team Members</a></span>
+                 </span>
+                </div>
+              </section>
+    
+            <section id = "main">
+              <section id="detailslist"> 
+                <div id="bugName">Bug Title:</div> 
+                <div id="ticketName"></div>
+                <br>
+<br>
+<div id="bugDetails">Detailed description of bug:</div> 
+<div id="bugDetailsDisplay"></div> 
+<hr>
+<br>
+<div id="bugIdentifier">Identifier of bug:</div> 
+<div id="bugIdentifierDisplay"></div> 
+<hr>
+<br>
+<div id="bugDateIdentified">Date of identification:</div> 
+<div id="bugDateIdentifiedDisplay"></div> 
+<hr>
+<br>
+<div id="bugProject">Project related to bug:</div> 
+<div id="bugProjectDisplay"></div> 
+<hr>
+<br>
+<div id="bugMember">Member assigned to bug:</div> 
+<div id="bugMemberDisplay"></div> 
+<hr>
+<br>
+<div id="bugStatus">Bug status:</div> 
+<div id="bugStatusDisplay"></div> 
+<hr>
+<br>
+<div id="bugPriority">Bug priority:</div> 
+<div id="bugPriorityDisplay"></div> 
+<hr>
+<br>
+<div id="bugTargetResDate">Target resolution date:</div> 
+<div id="bugTargetResDateDisplay"></div> 
+<hr>
+<br>
+<div id="bugActualResDate">Actual resolution date:</div> 
+<div id="bugActualResDateDisplay"></div> 
+<hr>
+<br>
+<div id="bugResSummary">Summary of bug resolution:</div> 
+<div id="bugResSummaryDisplay"></div> 
+<br>
+<input id="edit" type="button" value="EDIT TICKET">
+<input id="assign" type="button" value="ASSIGN TICKET">
+</section>
+
+<div id="editModal" class="Editmodal">
+    <div class="Editmodal-content">
+      <span class="Editclose">&times;</span>
+      <div id="addNewTicket"> EDIT TICKET
+        <form id ="newTicketForm">
+<p id="bugSummaryHeader"> Summary of bug:</p>
+<input id="bugSummary" type="text" maxlength="50">
+<p id="detailsHeader">Detailed description of bug:</p>
+<input id="theBugDetails" type="text" maxlength="200">
+<p id="identifierHeader">Identifier of bug:</p>
+<select name="identifier" id="identifier">
+<option value="teamMember">Team Member name</option>
+</select>
+<p id="dateIdentifiedHeader">Date of identification:</p>
+<input id="identificationDate" type="date">
+<p id="relatedProjectHeader">Project related to bug:</p>
+<select name="relatedProject" id="relatedProject">
+<option value="projectName">project name </option>
+</select>
+<p id="assignedMemberHeader">Member assigned to bug:</p>
+<select name="assignedMemberEdit" id="assignedMemberEdit">
+<option value="memberName">Team Member name</option>
+</select>
+<p id="statusHeader">Bug status:</p>
+<select name="status" id="status">
+<option value="open">open</option>
+<option value="resolved">resolved</option>
+<option value="overdue">overdue</option>
+</select>
+<p id="PriorityHeader">Bug priority:</p>
+<select name="priority" id="priority">
+<option value="low">low</option>
+<option value="medium">medium</option>
+<option value="high">high</option>
+</select>
+<p id="targetResolutionDateHeader">Target resolution date:</p>
+<input id="targetDate" type="date">
+<hr>
+<p id="actualResolutionDateHeader">Actual resolution date:</p>
+<input id="actualDate" type="date">
+<p id="resolutionSummaryHeader"> Summary of bug resolution: </p>
+<input id="resolutionSummary" type="text" maxlength="100">
+<br><br>
+<input id="editCancel" type="button" value="CANCEL">
+<input id="saveChanges" onclick = ""type="button" value="SAVE CHANGES">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="memberModal" class="MemberModal">
+    <div class="MemberModal-content">
+      <span class="MemberClose">&times;</span>
+      <div id="assignMember"> ASSIGN TEAM MEMBER TO TICKET
+        <form id ="newMemberForm">
+          <p id="assignedMemberHeader">Choose team member:</p>
+          <select name="assignedMember" id="assignedMember">
+            <option value="memberName">Team Member name</option>
+          </select>
+
+<input id="MemberCancel" type="button" value="CANCEL">
+<input id="MemberSaveChanges" type="button" value="SAVE CHANGES">
+        </form>
+      </div>
+    </div>
+  </div>
+
+        </section>
+        
+    </body>
+</html>

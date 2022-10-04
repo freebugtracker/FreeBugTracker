@@ -1,0 +1,606 @@
+html, 
+body {
+font-family: Arial, sans-serif;
+height: 100%;
+width: 100%;
+margin-top: auto;
+margin-right:auto;
+margin-left: auto;
+margin-bottom: auto;
+padding: 0;
+}
+
+body{
+display: grid;
+margin-top: auto;
+margin-right:auto;
+margin-left: auto;
+margin-bottom: auto;
+padding: 0;  
+}
+
+#container{
+display: grid;
+width:100%;
+height:100%;
+grid-template-areas:
+"navigation head"
+"navigation main";  
+
+grid-template-rows: 15% 85%;
+grid-template-columns: 15% 85%;  
+}
+
+#head{
+grid-area: head;
+background-image: url(images/background1blurred.jpg);   
+background-repeat: no-repeat;
+background-size: cover; 
+display: inline-flex;
+align-items:stretch;
+}
+
+#navigation {
+grid-area: navigation;
+background-color:white;
+position: fixed;
+}
+
+#main{
+grid-area: main;
+background-color : #F4F6FA;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+
+#avatar {
+border-radius: 50%;
+width: 55px;
+margin-left:20px;
+margin-top: 13px;
+}
+
+#navigation a{
+color: white;
+}
+
+#themodal{
+grid-area: main;
+}
+
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+left: 0;
+top: 0;
+width: 100%; 
+height: 100%; 
+overflow: auto; 
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%; 
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+#ticketSubHeadings{
+display: flex;
+justify-content: space-evenly;
+background: white;
+padding: 10px;
+margin-top: -9px;
+margin-bottom: -9px;
+}
+
+.bugDisplay{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid;
+margin-right: 100px;
+width: 1000px;
+}
+
+.bugSummaryDisplay{
+padding-left: 100px;
+padding-right:80px;
+
+}
+
+.StatusSummaryDisplay{
+text-align: left;
+padding-right:80px;
+}
+
+.PrioritySummaryDisplay{
+padding-right: 160px;
+}
+
+
+.ProjectDisplay{
+margin-right: 80px
+} 
+
+
+.bugDisplay:hover {
+background-color: white; 
+color:black
+}
+.options{
+display: flex;
+width: 95%;
+padding-right: 10px;
+}
+
+#navButtons{
+display: flex;
+}
+
+.showMore{
+margin-top:15px;
+margin-left:2px;
+
+}
+
+.showMore:hover{
+width: 10px;
+height: 20px;
+}
+
+.OptionsModal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+left: 0;
+top: 0;
+width: 100%; 
+height: 100%; 
+overflow: auto; 
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4);
+}
+
+.optionsModal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%; 
+}
+
+.optionsClose {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.optionsClose:hover,
+.optionsClose:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+#logo{
+width: 140px;
+margin-top: 20px;
+margin-left: 10px;
+margin-right: -60px;
+}
+
+#navlinks{
+display: block;
+padding-left: 10px;
+padding-top: 30px;
+}
+
+#homepic{
+margin-bottom:-3px;
+padding-right: 17px;
+width: 25px;
+}
+
+#ticketspic{
+padding-right: 20px;
+width: 20px;
+}
+
+#projectspic{
+padding-right: 20px;
+width: 20px;
+}
+
+#teampic{
+padding-right: 15px;
+width: 23px;
+height: 20px;
+}
+
+#homeList{
+display: block;
+padding-bottom: 15px;
+}
+
+#ticketList{
+display: block;
+padding-bottom: 15px;
+}
+
+#ProjectList{
+display: block;
+padding-bottom: 17px;
+}
+
+#TeamList{
+display: block;
+padding-bottom: 15px;
+}
+
+#homelink:link{
+text-decoration: none;
+color: rgb(81, 81, 81);
+padding-bottom: 3px;
+}
+
+#homelink:visited{
+text-decoration: none;
+color: rgb(81, 81, 81);
+}
+
+#homelink:hover{
+text-decoration: underline;
+color: black ;
+}
+
+#ticketslink:link{
+text-decoration: none;
+color: rgb(81, 81, 81);
+padding-bottom: 3px;
+}
+
+#ticketslink:visited{
+text-decoration: none;
+color: rgb(81, 81, 81);
+}
+
+#ticketslink:hover{
+text-decoration: underline;
+color: black ;
+}
+
+#projectslink:link{
+text-decoration: none;
+color: rgb(81, 81, 81);
+padding-bottom: 3px;
+}
+
+#projectslink:visited{
+text-decoration: none;
+color: rgb(81, 81, 81);
+}
+
+#projectslink:hover{
+text-decoration: underline;
+color: black ;
+}
+#teamlink:link{
+text-decoration: none;
+color: rgb(81, 81, 81);
+padding-bottom: 3px;
+}
+
+#teamlink:visited{
+text-decoration: none;
+color: rgb(81, 81, 81);
+}
+
+#teamlink:hover{
+text-decoration: underline;
+color: black ;
+}
+
+#newTicket{
+background-color: #001447;
+color:white;
+padding: 5px;
+margin: 10px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 100px;
+}
+
+#newTicket:hover{
+background-color: #023885;
+color:white;
+padding: 5px;
+margin: 10px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 100px;
+}
+
+#sort{
+background-color: #001447;
+color:white;
+padding: 5px;
+margin-left: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 100px;
+}
+
+#sort:hover{
+background-color: #023885;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 100px;
+}
+
+#logout{
+background-color: #F4F6FA;
+color:black;
+padding: 5px;
+margin: 10px;
+margin-top: 20px;
+margin-left: 680px;
+border: transparent;
+border-radius: 2px;
+width: 60px;
+}
+
+#logout:hover{
+background-color: #023885;
+color:white;
+padding: 5px;
+margin: 10px;
+margin-top: 20px;
+margin-left: 680px;
+border: transparent;
+border-radius: 2px;
+width: 60px;
+}
+
+#dashboardHeader{
+font-size: 30px;
+color: white;
+margin-left: 10px;
+}
+
+#ticketHeading{
+margin-left: 15px;
+font-size: 20px;
+}
+
+#backButton{
+background-color: #001447;
+color:white;
+padding: 5px;
+margin-left: 370px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 50px;
+}
+
+#backButton:hover{
+background-color: #023885;
+color:white;
+padding: 5px;
+margin-left: 370px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 50px;
+}
+
+
+#nextButton{
+background-color: #001447;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 50px;
+}
+
+#nextButton:hover{
+background-color: #023885;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 50px;
+}
+
+#assignTicket{
+background-color: #001447;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 130px;
+}
+
+#assignTicket:hover{
+background-color: #023885;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 130px;
+}
+
+#deleteTicket{
+background-color: #001447;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 130px;
+}
+
+#deleteTicket:hover{
+background-color: #023885;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 130px;
+}
+
+#optionsCancel{
+background-color: darkgray;
+color:black;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 130px;
+}
+
+#optionsCancel:hover{
+background-color: #263243;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 130px;
+}
+
+
+#MemberCancel{
+background-color: darkgray;
+color:black;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 130px;
+}
+
+#MemberCancel:hover{
+background-color: #263243;
+color:white;
+padding: 5px;
+border: transparent;
+border-radius: 2px;
+align-self: center;
+position:static;
+width: 130px;
+}
+
+#MemberSaveChanges{
+  background-color: #001447;
+  color:white;
+  padding: 5px;
+  border: transparent;
+  border-radius: 2px;
+  align-self: center;
+  position:static;
+  width: 130px;
+  }
+  
+  #MemberSaveChanges:hover{
+  background-color: #023885;
+  color:white;
+  padding: 5px;
+  border: transparent;
+  border-radius: 2px;
+  align-self: center;
+  position:static;
+  width: 130px;
+  }
+
+  #submitTicket{
+    background-color: #001447;
+    color:white;
+    padding: 5px;
+    border: transparent;
+    border-radius: 2px;
+    align-self: center;
+    position:static;
+    width: 130px;
+    }
+    
+    #submitTicket:hover{
+    background-color: #023885;
+    color:white;
+    padding: 5px;
+    border: transparent;
+    border-radius: 2px;
+    align-self: center;
+    position:static;
+    width: 130px;
+    }
+    #submitTicketCancel{
+      background-color: darkgray;
+      color:black;
+      padding: 5px;
+      border: transparent;
+      border-radius: 2px;
+      align-self: center;
+      position:static;
+      width: 130px;
+      }
+      
+      #submitTicketCancel:hover{
+      background-color: #263243;
+      color:white;
+      padding: 5px;
+      border: transparent;
+      border-radius: 2px;
+      align-self: center;
+      position:static;
+      width: 130px;
+      }

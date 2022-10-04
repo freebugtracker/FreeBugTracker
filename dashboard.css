@@ -1,0 +1,102 @@
+
+.PFP {
+  position: fixed;
+  display: grid;
+  height: 100px;
+  width: 74px;
+
+  border: 1px solid rgb(84, 198, 252);
+  background-color: rgb(21, 21, 66);
+  border-radius: 1rem;
+
+
+
+}
+
+body {
+
+  background-image: url(images/background1.jpg);
+  padding-top: 1px;
+  padding-bottom: 200px;
+  background-color: #131212;
+  position: center center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.header {
+  position: static;
+  display: grid;
+
+
+  border: 1px solid rgb(84, 198, 252);
+  background-color: rgb(21, 21, 66);
+  border-radius: 1rem;
+
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 4%;
+  margin-top: 1%;
+
+  padding-right: 30%;
+  padding-left: 30%;
+  color: rgb(255, 255, 255);
+}
+
+.PFP img {
+  border-radius: 50%;
+  width: 70px;
+  position: center;
+  margin-left: 3%;
+
+}
+
+.header li {
+  font-size: 200%;
+  list-style-type: none;
+  display: inline-block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navigation {
+  border-radius: 1rem;
+  border: 1px solid rgb(86, 86, 219);
+  margin-top: 1rem;
+  background-color: rgb(21, 21, 66);
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.navigation li {
+
+  border: 1px solid rgb(34, 126, 212);
+  list-style-type: none;
+  height: 2rem;
+  margin: 2rem;
+  margin-left: -1rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgb(21, 21, 66);
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+
+
+}
+
+.navigation li:hover {
+  background-color: rgb(31, 31, 63);
+  border: 3px solid rgb(99, 175, 236);
+
+}
+
+.navigation li a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2rem;
+}

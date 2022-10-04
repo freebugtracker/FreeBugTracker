@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Projects</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="projects.css" rel="stylesheet">
+        <script src="projects.js"></script>
+    </head>
+    <body>
+        <section id="container">   
+
+            <section id = "head">
+            <div id="dashboardHeader">PROJECTS<input id="logout" type="button" onclick="backToLogin()" value="Logout"><img src="images/admin.jpg" id = "avatar" alt="Avatar">
+            </div>
+            </section>
+    
+            <section id = "navigation">
+              <span class="verticalMenu">
+                <img id="logo" src="images/logo.png">
+  
+                  <div id="navlinks">
+                  <span id="homeList"> <img id="homepic" src="images/homeog.png"><a id="homelink" href="dashboard.html">Home</a></span>
+                  
+                    <span id="ticketList"><img id="ticketspic" src="images/tickets.png"><a id="ticketslink" href="tickets.html">Tickets</a></span>
+                
+                      <span id="ProjectList"><img id="projectspic" src="images/projects.png"><a id="projectslink"  href="projects.html">Projects</a></span>
+      
+                        <span id="TeamList"><img id="teampic" src="images/team.png"><a id="teamlink"  href="team.html">Team Members</a></span>
+                 </span>
+                </div>
+              </section>
+    
+            <section id = "main">
+            <span id="projectHeading">All projects<input id="newProject" type="button" onclick="" value="New project"></span>
+            <hr>
+             <span id="projectSubHeadings"> <div id="projectHeading">PROJECT NAME </div> <div id="projectID">PROJECT ID</div></span>   
+             <hr>
+             <span id="projectContainer"> </span>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="addNewProject"> CREATE NEW PROJECT
+              <form id ="newProjectForm">
+<p id="projectTitleHeader"> Project title: </p>
+<input id="projectTitle" type="text" maxlength="50">
+<p id="detailsHeader">Description of project:</p>
+<input id="projectDescription" type="text">
+
+<input id="submitProjectCancel" type="button" value="CANCEL">
+<input id="submitProject" onclick = "newProjectUserInput() "type="button" value="SUBMIT PROJECT">
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <span id="navButtons">
+          <input id="backButton" type="button" onclick="pageNavBack()" value="⇦"> 
+          <p id= "pageNumber"></p>
+          <input id="nextButton" type="button" onclick="pageNavNext()" value="➪"> </span>
+      </section>
+            </section>
+    
+        </section>
+    </body>
+</html>
